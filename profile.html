@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Course App | user-profile</title>
+</head>
+<body>
+    
+<header>
+    <div class="header_logo_div">
+        <img src="./images/logo_0.png" alt=""><span class="app_name">Course Shop</span>
+    </div>
+     
+
+    <nav class="navbar">
+        <a  href="index.html">home</a>
+        <a href="my_courses.html">My courses</a>
+        <a class="active"href="profile.html">Profile</a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html"><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+
+</header>
+<div class="profile_wrapper">
+    <div class="wrapper">
+        <h2>Public Profile</h2>
+        <form>
+            <div class="inputBox">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Full Name" value="Abdul Ahad" required>
+            </div>
+            <div class="inputBox">
+                <label for="name">Email</label>
+                <input type="email" placeholder="Email Address" value="ahad@example.com" disabled required>
+            </div>
+            <div class="inputBox">
+                <label for="name">Password</label>
+                <input type="password" placeholder="Password" value="ahad123" required>
+            </div>
+            <div class="inputBox">
+                <label for="name">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" value="ahad123" required>
+            </div>
+            <div class="inputBox">
+                <label for="photo">Profile Photo</label>
+                <input type="file" accept="image/*"  required>
+            </div>
+            <img src="" width="150px" height="auto">
+            
+            <div>
+                <button class="btn">Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>

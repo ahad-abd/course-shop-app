@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@300;400&family=Palette+Mosaic&display=swap');
+
+:root{
+    --blue:#05386b;
+    --black:#192a56;
+    
+    --light-blue:#cafafe;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+.app_name{
+    font-family: 'Happy Monkey', cursive;
+
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--light-blue);
+    color:var(--blue)
+    
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: var(--light-blue);
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .header_logo_div{
+    display: flex;
+    align-items: center;
+}
+header img{
+    height:6vh;
+}
+header span{
+    margin-left : 10px;
+    font-size: 30px;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--blue);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--blue);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:#fff;
+    border-radius: 50%;
+    background: var(--blue);
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:var(--blue);
+    background: var(--green);
+
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+#menu{
+    margin-top: 70px;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top:2.5rem; right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color:var(--black);
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+   font-size: 1.7rem;
+   color:var(--green);
+}
+
+.menu .box-container .box .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.menu .box-container .box .content .price{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.4rem;
+    color:var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
+.signup-box {
+    width: 360px;
+    height: 600px;
+    margin:100px auto;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .login-box {
+    width: 360px;
+    height: 280px;
+    margin:200px auto;
+    margin-bottom: 0px;
+    border-radius: 3px;
+    background-color: white;
+  }
+  
+  
+  h1 {
+    
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="submit"] {
+    cursor:pointer;  
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--light-blue);
+    color: black;
+    font-size: 18px;
+  }
+  input[type="submit"]:hover{
+      background-color: var(--blue);
+      color:white;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    transform: translateY(-19px);
+    text-align: center;
+    color: var(--blue);
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: #49c1a2;
+  }
+  .para-2 a :hover{
+    color: black;
+  }
+  .para-3 {
+    transform: translateY(-35px);
+    text-align: center;
+    color: var(--blue);
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-3 a {
+    color: #49c1a2;
+  }
+  .profile-wrapper{
+      
+      display: flex;
+      justify-content: center;
+  }
+  .wrapper{
+    margin-top :100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+ /* course-details */
+ .card-wrapper{
+     margin-top: 190px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.img-showcase{
+    margin-top: 60px;
+    display: flex;
+    width: 60%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+
+
+.course-content{
+    padding: 2rem 1rem;
+}
+.course-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.course-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+
+.course-rating{
+    
+    color: #ffc107;
+}
+.course-rating span{
+    
+    font-weight: 600;
+    color: #252525;
+}
+.course-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.course-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.course-detail h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.course-detail p{
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.course-detail ul{
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+.course-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(shoes_images/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.course-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#eee;
+    }
+
+   
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+     .box-container .box img{
+        height:auto;
+        width: 100%;
+    }
+
+    
+}
+
